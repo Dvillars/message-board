@@ -1,0 +1,19 @@
+{ "questions": [{
+    "title": "How whats broken",
+    "question": "ember is is difficult, whats broken",
+    "author": "derek villars"
+  }, {
+    "title": "ember dosnt create code for me",
+    "question": "i just thought i would do 3 or 4 commands in the terminal and i would be rich",
+    "author": "derp"
+  }, {
+    "title": "routing is hard",
+    "question": "how dose one follow",
+    "author": "DMoney"
+  }],
+  "answers": [{
+    "title": "idk",
+    "answer": "dude really, just smrt",
+    "author": "smart guy"
+  }]
+}

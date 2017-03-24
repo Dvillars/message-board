@@ -1,0 +1,16 @@
+<h1>index.hbs</h1>
+
+<h2>many a link</h2>
+<ul>
+  <li>{{#link-to 'about'}}About{{/link-to}}</li>
+</ul>
+<hr>
+<h2>Each Question</h2>
+{{#each model.questions as |question|}}
+  {{question-tile question=question}}
+{{/each}}
+<hr>
+<h2>Each Answer</h2>
+{{#each model.answers as |answer|}}
+  {{answer-tile answer=answer}}
+{{/each}}
