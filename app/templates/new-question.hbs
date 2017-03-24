@@ -1,0 +1,14 @@
+<h2>add new question</h2>
+
+<form>
+<label for="title">Title</label>
+{{input value=title id="title" required="required"}} <br>
+
+<label for="author">Author</label>
+{{input value=author id="author" required="required"}} <br>
+
+<label for="question">Question</label>
+{{input value=question id="question" required="required"}} <br>
+
+<button {{action 'saveQuestion'}}> add question</button>
+</form>

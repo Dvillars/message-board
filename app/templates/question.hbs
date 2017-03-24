@@ -1,7 +1,25 @@
-<h3>{{model.title}}</h3>
+<h2>question || {{model.title}}</h2>
 
 <p>
   title -> {{model.title}} <br>
-  question -> {{model.question}} <br>
   author -> {{model.author}} <br>
-</p> <br>
+  question -> {{model.question}} <br>
+</p>
+<h4>add answer</h4>
+
+<form>
+<label for="title">Title</label>
+{{input value=title id="title" required="required"}} <br>
+
+<label for="author">Author</label>
+{{input value=author id="author" required="required"}} <br>
+
+<label for="answer">Answer</label>
+{{input value=answer id="answer" required="required"}} <br>
+
+<button {{action 'saveAnswer'}}> add answer</button>
+</form>
+<hr>
+<!-- TODO: {{#each model.answers as |answer|}}
+   <br>
+{{/each}} -->

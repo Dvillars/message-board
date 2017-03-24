@@ -1,19 +1,19 @@
 { "questions": [{
-    "title": "How whats broken",
-    "question": "ember is is difficult, whats broken",
-    "author": "derek villars"
+    "title": "what pokemon is the best",
+    "question": "what pokemon is the best gen 2",
+    "author": "derek"
   }, {
-    "title": "ember dosnt create code for me",
-    "question": "i just thought i would do 3 or 4 commands in the terminal and i would be rich",
-    "author": "derp"
+    "title": "popping knuckels",
+    "question": "dose popping your knuckels give you authrightis",
+    "author": "derek"
   }, {
-    "title": "routing is hard",
-    "question": "how dose one follow",
+    "title": "i want a dog",
+    "question": "what types of dogs dont shed",
     "author": "DMoney"
   }],
   "answers": [{
-    "title": "idk",
-    "answer": "dude really, just smrt",
-    "author": "smart guy"
+    "title": "answer thing",
+    "answer": "this dosnt have a question that its linked to",
+    "author": "a question"
   }]
 }
