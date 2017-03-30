@@ -2,21 +2,21 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
   model(params) {
-    return this.store.findRecord('question', params.question_id);
+    return Ember.RSVP.hash({
+      question: this.store.findRecord('question', params.question_id),
+      answers: this.store.query('answer', { filter: { id: params.answer_id } })
+    });
+
   },
   actions: {
-    saveAnswer() {
-      var params = {
-        author: this.controller.get('author'),
-        title: this.controller.get('title'),
-        answer: this.controller.get('answer')
-      };
-      this.controller.set('author', '');
-      this.controller.set('title', '');
-      this.controller.set('answer', '');
+    saveAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);
-      newAnswer.save();
-      this.transitionTo('index');
+      var question = params.question;
+      question.get("answer").addObject(newAnswer);
+      newAnswer.save().then(function() {
+        return question.save();
+      });
+      this.transitionTo('question');
     }
   }
 });

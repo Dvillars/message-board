@@ -1,0 +1,12 @@
+<form>
+<label for="title">Title</label>
+{{input value=title id="title" required="required"}} <br>
+
+<label for="author">Author</label>
+{{input value=author id="author" required="required"}} <br>
+
+<label for="answer">Answer</label>
+{{input value=answer id="answer" required="required"}} <br>
+
+<button {{action 'saveAnswer'}}> add answer</button>
+</form>
